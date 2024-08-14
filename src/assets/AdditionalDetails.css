@@ -1,0 +1,84 @@
+/* additional-details.css */
+
+.additional-details-container {
+    /* styles for the main container */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 500px;
+  }
+  
+  .additional-details-container h1 {
+    /* styles for the heading */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    /* styles for each form group */
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    /* styles for labels */
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    /* styles for text inputs and textareas */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    /* additional styles for textarea */
+    height: 100px;
+  }
+  
+  input[readonly] {
+    /* styles for read-only inputs */
+    background-color: #eee;
+  }
+  
+  button[type="submit"] {
+    /* styles for submit button */
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    /* styles for submit button on hover */
+    background-color: #3e8e41;
+  }
+  .message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+  
+  .message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+  
+  

@@ -1,0 +1,117 @@
+/* Main Section Styles */
+.main-section {
+  background-image: url('https://images.pexels.com/photos/16652368/pexels-photo-16652368/free-photo-of-cute-dog-on-leash-in-park.jpeg?auto=compress&cs=tinysrgb&w=600'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  padding: 4em 2em;
+  position: relative;
+  color: #fff;
+  text-align: center;
+}
+
+.main-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay with 50% opacity */
+  backdrop-filter: blur(5px); /* Apply blur effect */
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Ensures the card is centered and takes full height */
+}
+
+.col-md-12 {
+  flex-basis: 100%;
+  display: flex; /* Flex container for the card */
+  justify-content: center;
+  padding: 0; /* Remove padding to make card fill the width */
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1em;
+  padding: 1.5em;
+  width: 100%;
+  max-width: 100%; /* Ensure the card fills the width of the container */
+  text-align: left;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px; /* Ensure equal height for the image */
+  object-fit: cover; /* Ensure the image covers the specified height without distortion */
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1em;
+}
+
+.card-content {
+  text-align: center;
+  flex: 1; /* Allow the content to stretch */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out the content */
+}
+
+.card-content h2 {
+  margin-bottom: 0.5em;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content .icon {
+  margin-right: 0.5em;
+  color: #ff7e5f; /* Icon color to match the theme */
+}
+
+.card-content p {
+  color: #555;
+  margin-bottom: 1em;
+}
+
+.card-content button {
+  background-color: #ff7e5f;
+  color: #fff;
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card-content button:hover {
+  background-color: #feb47b;
+}
+
+@media (max-width: 768px) {
+  .col-md-12 {
+    flex-basis: 100%;
+  }
+
+  .card {
+    max-width: none; /* Remove max-width on smaller screens */
+  }
+}

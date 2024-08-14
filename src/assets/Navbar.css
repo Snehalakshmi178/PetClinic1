@@ -1,0 +1,52 @@
+/* Navbar Styles */
+.navbar {
+  background: linear-gradient(90deg, #ff69b4, #ff1493); /* Gradient pink background */
+  padding: 15px 20px; /* Adjusted padding for better spacing */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1060; /* Higher than toast-container */
+   /* Added subtle shadow for depth */
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar li {
+  margin: 0 20px; /* Increased spacing between items */
+}
+
+.navbar a {
+  color: #ffffff; /* White text color for better contrast */
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar a:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+.navbar a:active {
+  color: #fff700; /* Slightly different color when active/clicked */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+}

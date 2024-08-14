@@ -1,0 +1,91 @@
+/* Why Choose Us Styles */
+.why-choose-us {
+  background-color: #e08169;
+  background-size: cover;
+  background-position: center;
+  padding: 4em 2em;
+  color: #fff; /* Make text white for better readability */
+  text-align: center;
+  position: relative;
+}
+
+.why-choose-us::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay with 60% opacity */
+  backdrop-filter: blur(5px); /* Apply blur effect */
+  z-index: 0;
+}
+
+.why-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-choose-us h2 {
+  margin-bottom: 1em;
+  font-size: 2.5em;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+}
+
+.why-choose-us p {
+  margin-bottom: 2em;
+  font-size: 1.2em;
+  color: #ddd;
+}
+
+.why-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.why-card {
+  background-color: rgba(255, 255, 255, 0.9); /* White background with slight transparency */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1em;
+  padding: 2em 1.5em;
+  width: calc(33% - 2em);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-icon {
+  font-size: 3em;
+  margin-bottom: 1em;
+  color: #ff7e5f; /* Icon color to match the theme */
+}
+
+.why-card h3 {
+  margin-bottom: 0.5em;
+  color: #333;
+}
+
+.why-card p {
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .why-card {
+    width: calc(50% - 2em);
+  }
+}
+
+@media (max-width: 480px) {
+  .why-card {
+    width: calc(100% - 2em);
+  }
+}

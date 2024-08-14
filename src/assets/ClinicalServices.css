@@ -1,0 +1,98 @@
+/* ClinicalServices.css */
+
+.clinical-services-page {
+  padding: 40px 20px; /* More padding for a spacious look */
+  background-color: #f9f8f9; /* Background color */
+  color: #0b0b0b; /* Dark text */
+  font-family: 'Arial, sans-serif'; /* Consistent font family */
+}
+
+.page-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Increased margin for better spacing */
+  color: #0b0b0b; /* Dark text */
+  text-align: center; /* Centered title */
+}
+
+.page-subtitle {
+  font-size: 18px;
+  color: #030303; /* Slightly lighter for subtitle */
+  margin-bottom: 30px; /* Increased margin for better spacing */
+  text-align: center; /* Centered subtitle */
+}
+
+.services-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centered content */
+  gap: 20px; /* Space between cards */
+}
+
+.service-card {
+  background-color: #fff; /* White background for cards */
+  border: 1px solid #ddd; /* Light border for better definition */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 0 22%; /* Cards take up roughly a quarter width including margins */
+  border-radius: 15px; /* Rounded corners */
+  display: flex;
+  flex-direction: column;
+  text-decoration: none; /* Remove underline from link */
+  overflow: hidden; /* Ensure content stays within the card */
+  margin-bottom: 20px; /* Margin for spacing between rows */
+  height: 350px; /* Fixed height for uniformity */
+  position: relative; /* For overlay effects */
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+}
+
+.service-card .card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1; /* Ensures body takes available space */
+}
+
+.service-card .card-title {
+  font-size: 20px; /* Slightly larger title */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #211515; /* Dark text */
+}
+
+.service-card .card-text {
+  font-size: 16px; /* Slightly larger text */
+  color: #2c2323; /* Slightly lighter for card text */
+  flex-grow: 1; /* Ensures text takes available space */
+}
+
+.service-image {
+  width: 100%; 
+  height: 150px; /* Set a fixed height to ensure consistent image size */
+  object-fit: cover; /* Maintain aspect ratio and cover the given area */
+  border-top-left-radius: 15px; /* Rounded corners for image */
+  border-top-right-radius: 15px; /* Rounded corners for image */
+  margin-bottom: 10px; /* Space below the image */
+}
+
+.service-link {
+  text-decoration: none; /* Remove underline from link */
+  color: inherit; /* Inherit text color */
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    flex: 1 0 48%; /* Roughly half width for medium screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .service-card {
+    flex: 1 0 100%; /* Full width for smaller screens */
+  }
+}

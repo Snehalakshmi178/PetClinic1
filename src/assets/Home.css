@@ -1,0 +1,173 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.75em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+a:hover {
+  color: #333;
+}
+
+/* Home Page Styles */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background-color: #555;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+/* Main Section Styles */
+.main-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;  /* Adjust the padding as per your layout needs */
+}
+
+.main-section .container {
+  max-width: 800px;
+  width: 100%;
+  padding: 0 1em;
+}
+
+.main-section .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main-section .col-md-6 {
+  flex-basis: 50%;
+  padding: 1em;
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+  padding: 1em;
+}
+
+.card-content h2 {
+  margin: 1em 0 0.5em;
+  font-size: 1.5em;
+  color: #555;
+}
+
+.card-content p {
+  margin: 0 0 1em;
+  font-size: 1em;
+  color: #777;
+}
+
+.card-content button {
+  background-color: #555;
+  color: #fff;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-content button:hover {
+  background-color: #333;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Why Choose PetPals Styles */
+.why-choose-petpals {
+  background-color: #fff;
+  padding: 2em;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+.why-choose-petpals h2 {
+  margin: 0;
+  color: #555;
+}
+
+.why-choose-petpals p {
+  margin: 0;
+  color: #777;
+}
